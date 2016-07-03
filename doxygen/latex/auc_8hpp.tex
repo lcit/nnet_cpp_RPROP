@@ -1,0 +1,52 @@
+\hypertarget{auc_8hpp}{}\section{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/include/utils/auc.hpp File Reference}
+\label{auc_8hpp}\index{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/include/utils/auc.\+hpp@{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/include/utils/auc.\+hpp}}
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$climits$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$algorithm$>$}\\*
+{\ttfamily \#include $<$Eigen/\+Dense$>$}\\*
+Include dependency graph for auc.\+hpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{auc_8hpp_a8f4114f187847b90fbfdd7d495fd6c23}{calc\+A\+U\+C} (Matrix\+Xd labels, Matrix\+Xd scores, int posclass)
+\item 
+double \hyperlink{auc_8hpp_a9c45208e0f846cf97192925eba63a797}{trapezoid\+Area} (double X1, double X2, double Y1, double Y2)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{auc_8hpp_a8f4114f187847b90fbfdd7d495fd6c23}{}\index{auc.\+hpp@{auc.\+hpp}!calc\+A\+U\+C@{calc\+A\+U\+C}}
+\index{calc\+A\+U\+C@{calc\+A\+U\+C}!auc.\+hpp@{auc.\+hpp}}
+\subsubsection[{calc\+A\+U\+C}]{\setlength{\rightskip}{0pt plus 5cm}double calc\+A\+U\+C (
+\begin{DoxyParamCaption}
+\item[{Matrix\+Xd}]{labels, }
+\item[{Matrix\+Xd}]{scores, }
+\item[{int}]{posclass}
+\end{DoxyParamCaption}
+)}\label{auc_8hpp_a8f4114f187847b90fbfdd7d495fd6c23}
+Computes the A\+U\+C
+
+
+\begin{DoxyParams}{Parameters}
+{\em labels} & matrix(n,1) filled with 0 or 1 \\
+\hline
+{\em scores} & matrix(n,1) filled with \mbox{[}0..1\mbox{]} \\
+\hline
+{\em posclass} & positive label 0 or 1\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A\+U\+C 
+\end{DoxyReturn}
+\hypertarget{auc_8hpp_a9c45208e0f846cf97192925eba63a797}{}\index{auc.\+hpp@{auc.\+hpp}!trapezoid\+Area@{trapezoid\+Area}}
+\index{trapezoid\+Area@{trapezoid\+Area}!auc.\+hpp@{auc.\+hpp}}
+\subsubsection[{trapezoid\+Area}]{\setlength{\rightskip}{0pt plus 5cm}double trapezoid\+Area (
+\begin{DoxyParamCaption}
+\item[{double}]{X1, }
+\item[{double}]{X2, }
+\item[{double}]{Y1, }
+\item[{double}]{Y2}
+\end{DoxyParamCaption}
+)}\label{auc_8hpp_a9c45208e0f846cf97192925eba63a797}

@@ -1,0 +1,31 @@
+\hypertarget{nnet_8hpp}{}\section{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/include/nnet.hpp File Reference}
+\label{nnet_8hpp}\index{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/include/nnet.\+hpp@{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/include/nnet.\+hpp}}
+{\ttfamily \#include $<$cmath$>$}\\*
+{\ttfamily \#include $<$stdio.\+h$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$Eigen/\+Dense$>$}\\*
+Include dependency graph for nnet.\+hpp\+:
+% FIG 0
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classneural__network_1_1nnet}{neural\+\_\+network\+::nnet}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceneural__network}{neural\+\_\+network}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ Matrix\+Xd $>$ \hyperlink{nnet_8hpp_a4826060b437e399cfd1fca5281109704}{Vector\+Matrix\+Xd}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{nnet_8hpp_a4826060b437e399cfd1fca5281109704}{}\index{nnet.\+hpp@{nnet.\+hpp}!Vector\+Matrix\+Xd@{Vector\+Matrix\+Xd}}
+\index{Vector\+Matrix\+Xd@{Vector\+Matrix\+Xd}!nnet.\+hpp@{nnet.\+hpp}}
+\subsubsection[{Vector\+Matrix\+Xd}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$Matrix\+Xd$>$ {\bf Vector\+Matrix\+Xd}}\label{nnet_8hpp_a4826060b437e399cfd1fca5281109704}

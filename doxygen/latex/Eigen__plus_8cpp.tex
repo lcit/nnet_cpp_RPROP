@@ -1,0 +1,190 @@
+\hypertarget{Eigen__plus_8cpp}{}\section{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/src/utils/\+Eigen\+\_\+plus.cpp File Reference}
+\label{Eigen__plus_8cpp}\index{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/src/utils/\+Eigen\+\_\+plus.\+cpp@{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/src/utils/\+Eigen\+\_\+plus.\+cpp}}
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include \char`\"{}Eigen\+\_\+plus.\+h\char`\"{}}\\*
+Include dependency graph for Eigen\+\_\+plus.\+cpp\+:
+% FIG 0
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Matrix\+Xd \hyperlink{Eigen__plus_8cpp_ab22e49d5d02205805f9341d0664efa44}{slice} (const Matrix\+Xd matrix, const int s1, const int e1)
+\item 
+Matrix\+Xd \hyperlink{Eigen__plus_8cpp_afb7574914910c0d5b266dbfb02c9fa8e}{slice} (const Matrix\+Xd \&matrix, const Vector\+Xi indices, const int s1, const int e1)
+\item 
+Matrix\+Xd \hyperlink{Eigen__plus_8cpp_ae337baa8f0ac51541c69992751e78aed}{slice} (const Matrix\+Xd \&matrix, const int s1, const int e1, const int s2, const int e2)
+\item 
+Matrix\+Xd \hyperlink{Eigen__plus_8cpp_ad39822d44fc2e1cde790fe4d79c351de}{slice} (const Matrix\+Xd \&matrix, const Vector\+Xi indices, const int s1, const int e1, const int s2, const int e2)
+\item 
+Matrix\+Xd \hyperlink{Eigen__plus_8cpp_aa2d4804528feafcd979e329f5522c36e}{shuffle} (const Matrix\+Xd \&matrix1, int random\+\_\+state)
+\item 
+Matrix\+Xd \hyperlink{Eigen__plus_8cpp_a439e6c41c9aff331287649b40651ec41}{shuffle} (const Matrix\+Xd \&matrix1, const Vector\+Xi indices, int random\+\_\+state)
+\item 
+Matrix\+Xd \hyperlink{Eigen__plus_8cpp_a28cfcc57cd5df6bfc673ac40966e85aa}{concatenate} (Matrix\+Xd m1, Matrix\+Xd m2, int axis)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{Eigen__plus_8cpp_a28cfcc57cd5df6bfc673ac40966e85aa}{}\index{Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}!concatenate@{concatenate}}
+\index{concatenate@{concatenate}!Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}}
+\subsubsection[{concatenate}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+Xd concatenate (
+\begin{DoxyParamCaption}
+\item[{Matrix\+Xd}]{m1, }
+\item[{Matrix\+Xd}]{m2, }
+\item[{int}]{axis}
+\end{DoxyParamCaption}
+)}\label{Eigen__plus_8cpp_a28cfcc57cd5df6bfc673ac40966e85aa}
+Concatenates two matrices
+
+
+\begin{DoxyParams}{Parameters}
+{\em m1} & matrix 1 \\
+\hline
+{\em m2} & matrix 2 \\
+\hline
+{\em axis} & concatenation axis 0 or 1\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resulting matrix 
+\end{DoxyReturn}
+\hypertarget{Eigen__plus_8cpp_aa2d4804528feafcd979e329f5522c36e}{}\index{Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}}
+\subsubsection[{shuffle}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+Xd shuffle (
+\begin{DoxyParamCaption}
+\item[{const Matrix\+Xd \&}]{matrix, }
+\item[{int}]{random\+\_\+state}
+\end{DoxyParamCaption}
+)}\label{Eigen__plus_8cpp_aa2d4804528feafcd979e329f5522c36e}
+Shuffles matrix\textquotesingle{}s rows
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & matrix to shuffle \\
+\hline
+{\em random\+\_\+state} & random seed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resulting matrix 
+\end{DoxyReturn}
+\hypertarget{Eigen__plus_8cpp_a439e6c41c9aff331287649b40651ec41}{}\index{Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}!shuffle@{shuffle}}
+\index{shuffle@{shuffle}!Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}}
+\subsubsection[{shuffle}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+Xd shuffle (
+\begin{DoxyParamCaption}
+\item[{const Matrix\+Xd \&}]{matrix, }
+\item[{const Vector\+Xi}]{indices, }
+\item[{int}]{random\+\_\+state}
+\end{DoxyParamCaption}
+)}\label{Eigen__plus_8cpp_a439e6c41c9aff331287649b40651ec41}
+Shuffles matrix\textquotesingle{}s rows and permutes the rows according to the vector indices
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & matrix to shuffle \\
+\hline
+{\em indices} & rows\textquotesingle{} permutation vector \\
+\hline
+{\em random\+\_\+state} & random seed\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resulting matrix 
+\end{DoxyReturn}
+\hypertarget{Eigen__plus_8cpp_ab22e49d5d02205805f9341d0664efa44}{}\index{Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}!slice@{slice}}
+\index{slice@{slice}!Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}}
+\subsubsection[{slice}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+Xd slice (
+\begin{DoxyParamCaption}
+\item[{const Matrix\+Xd}]{matrix, }
+\item[{const int}]{s1, }
+\item[{const int}]{e1}
+\end{DoxyParamCaption}
+)}\label{Eigen__plus_8cpp_ab22e49d5d02205805f9341d0664efa44}
+\hypertarget{Eigen__plus_8cpp_afb7574914910c0d5b266dbfb02c9fa8e}{}\index{Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}!slice@{slice}}
+\index{slice@{slice}!Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}}
+\subsubsection[{slice}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+Xd slice (
+\begin{DoxyParamCaption}
+\item[{const Matrix\+Xd \&}]{matrix, }
+\item[{const Vector\+Xi}]{indices, }
+\item[{const int}]{s1, }
+\item[{const int}]{e1}
+\end{DoxyParamCaption}
+)}\label{Eigen__plus_8cpp_afb7574914910c0d5b266dbfb02c9fa8e}
+Slices a matrix in the X direction and permutes the rows according to the vector indices
+
+The number of columns remain the same
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & matrix to slice \\
+\hline
+{\em indices} & rows\textquotesingle{} permutation vector \\
+\hline
+{\em s1} & start index (rows) \\
+\hline
+{\em e1} & end index (rows)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resulting matrix 
+\end{DoxyReturn}
+\hypertarget{Eigen__plus_8cpp_ae337baa8f0ac51541c69992751e78aed}{}\index{Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}!slice@{slice}}
+\index{slice@{slice}!Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}}
+\subsubsection[{slice}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+Xd slice (
+\begin{DoxyParamCaption}
+\item[{const Matrix\+Xd \&}]{matrix, }
+\item[{const int}]{s1, }
+\item[{const int}]{e1, }
+\item[{const int}]{s2, }
+\item[{const int}]{e2}
+\end{DoxyParamCaption}
+)}\label{Eigen__plus_8cpp_ae337baa8f0ac51541c69992751e78aed}
+Slices a matrix in both X and Y directions
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & matrix to slice \\
+\hline
+{\em s1} & start index (rows) \\
+\hline
+{\em e1} & end index (rows) \\
+\hline
+{\em s2} & start index (columns) \\
+\hline
+{\em e3} & end index (columns)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resulting matrix 
+\end{DoxyReturn}
+\hypertarget{Eigen__plus_8cpp_ad39822d44fc2e1cde790fe4d79c351de}{}\index{Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}!slice@{slice}}
+\index{slice@{slice}!Eigen\+\_\+plus.\+cpp@{Eigen\+\_\+plus.\+cpp}}
+\subsubsection[{slice}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+Xd slice (
+\begin{DoxyParamCaption}
+\item[{const Matrix\+Xd \&}]{matrix, }
+\item[{const Vector\+Xi}]{indices, }
+\item[{const int}]{s1, }
+\item[{const int}]{e1, }
+\item[{const int}]{s2, }
+\item[{const int}]{e2}
+\end{DoxyParamCaption}
+)}\label{Eigen__plus_8cpp_ad39822d44fc2e1cde790fe4d79c351de}
+Slices a matrix in both X and Y directions and permutes the rows according to the vector indices
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & matrix to slice \\
+\hline
+{\em indices} & rows\textquotesingle{} permutation vector \\
+\hline
+{\em s1} & start index (rows) \\
+\hline
+{\em e1} & end index (rows) \\
+\hline
+{\em s2} & start index (columns) \\
+\hline
+{\em e3} & end index (columns)\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+resulting matrix 
+\end{DoxyReturn}

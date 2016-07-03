@@ -1,0 +1,68 @@
+\hypertarget{namespacetest__python__wrapper}{}\section{test\+\_\+python\+\_\+wrapper Namespace Reference}
+\label{namespacetest__python__wrapper}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_a59fd1bc3247bb0acb40d8cbf871143b9}{current\+\_\+directory} = os.\+getcwd()
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_ac5d9b5723c691a9af92807d96792235a}{csv\+\_\+training} = csv.\+reader(open(\hyperlink{namespacetest__python__wrapper_a59fd1bc3247bb0acb40d8cbf871143b9}{current\+\_\+directory} + \textquotesingle{}/training.\+csv\textquotesingle{}, \textquotesingle{}rb\textquotesingle{}))
+\item 
+list \hyperlink{namespacetest__python__wrapper_aad910dc42f09fd045947a044950c9472}{training} = \mbox{[}$\,$\mbox{]}
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_ae20ea0207ae3cf3032591f41c625031b}{csv\+\_\+test} = csv.\+reader(open(\hyperlink{namespacetest__python__wrapper_a59fd1bc3247bb0acb40d8cbf871143b9}{current\+\_\+directory} + \textquotesingle{}/test.\+csv\textquotesingle{}, \textquotesingle{}rb\textquotesingle{}))
+\item 
+list \hyperlink{namespacetest__python__wrapper_a6798c3c4cb1b40d7adaadffe659baf9b}{test} = \mbox{[}$\,$\mbox{]}
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_a6b08d7d6b53d7c57e8a63155abb4b511}{scaler} = preprocessing.\+Standard\+Scaler()
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_a077c5501e386c551a0c0f77f9714773d}{training\+\_\+n} = scaler.\+transform(\hyperlink{namespacetest__python__wrapper_aad910dc42f09fd045947a044950c9472}{training}\mbox{[}\+:,\mbox{[}0,1\mbox{]}\mbox{]})
+\item 
+list \hyperlink{namespacetest__python__wrapper_ac2c345805c1880bb41413973e3f408d6}{layers} = \mbox{[}2,100,1\mbox{]}
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_acb732ba56f064d73826626b1ebc7db4c}{N\+N} = nnet\+\_\+ext.\+nnet(\hyperlink{namespacetest__python__wrapper_ac2c345805c1880bb41413973e3f408d6}{layers})
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_ac13fec0366a23feb02327f898755f543}{prediction\+\_\+tr} = np.\+array(N\+N.\+predict(X\+\_\+tr\+\_\+n))
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_a02c6c99c3b792f419918a024f32e6186}{prediction\+\_\+val} = np.\+array(N\+N.\+predict(X\+\_\+cv\+\_\+n))
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_a528e8d70107086ac3d5cae063362b480}{prediction\+\_\+te} = np.\+array(N\+N.\+predict(X\+\_\+te))
+\end{DoxyCompactItemize}
+
+
+\subsection{Variable Documentation}
+\hypertarget{namespacetest__python__wrapper_ae20ea0207ae3cf3032591f41c625031b}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!csv\+\_\+test@{csv\+\_\+test}}
+\index{csv\+\_\+test@{csv\+\_\+test}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{csv\+\_\+test}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+csv\+\_\+test = csv.\+reader(open({\bf current\+\_\+directory} + \textquotesingle{}/test.\+csv\textquotesingle{}, \textquotesingle{}rb\textquotesingle{}))}\label{namespacetest__python__wrapper_ae20ea0207ae3cf3032591f41c625031b}
+\hypertarget{namespacetest__python__wrapper_ac5d9b5723c691a9af92807d96792235a}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!csv\+\_\+training@{csv\+\_\+training}}
+\index{csv\+\_\+training@{csv\+\_\+training}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{csv\+\_\+training}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+csv\+\_\+training = csv.\+reader(open({\bf current\+\_\+directory} + \textquotesingle{}/training.\+csv\textquotesingle{}, \textquotesingle{}rb\textquotesingle{}))}\label{namespacetest__python__wrapper_ac5d9b5723c691a9af92807d96792235a}
+\hypertarget{namespacetest__python__wrapper_a59fd1bc3247bb0acb40d8cbf871143b9}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!current\+\_\+directory@{current\+\_\+directory}}
+\index{current\+\_\+directory@{current\+\_\+directory}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{current\+\_\+directory}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+current\+\_\+directory = os.\+getcwd()}\label{namespacetest__python__wrapper_a59fd1bc3247bb0acb40d8cbf871143b9}
+\hypertarget{namespacetest__python__wrapper_ac2c345805c1880bb41413973e3f408d6}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!layers@{layers}}
+\index{layers@{layers}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{layers}]{\setlength{\rightskip}{0pt plus 5cm}list test\+\_\+python\+\_\+wrapper.\+layers = \mbox{[}2,100,1\mbox{]}}\label{namespacetest__python__wrapper_ac2c345805c1880bb41413973e3f408d6}
+\hypertarget{namespacetest__python__wrapper_acb732ba56f064d73826626b1ebc7db4c}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!N\+N@{N\+N}}
+\index{N\+N@{N\+N}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{N\+N}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+N\+N = nnet\+\_\+ext.\+nnet({\bf layers})}\label{namespacetest__python__wrapper_acb732ba56f064d73826626b1ebc7db4c}
+\hypertarget{namespacetest__python__wrapper_a528e8d70107086ac3d5cae063362b480}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!prediction\+\_\+te@{prediction\+\_\+te}}
+\index{prediction\+\_\+te@{prediction\+\_\+te}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{prediction\+\_\+te}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+prediction\+\_\+te = np.\+array(N\+N.\+predict(X\+\_\+te))}\label{namespacetest__python__wrapper_a528e8d70107086ac3d5cae063362b480}
+\hypertarget{namespacetest__python__wrapper_ac13fec0366a23feb02327f898755f543}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!prediction\+\_\+tr@{prediction\+\_\+tr}}
+\index{prediction\+\_\+tr@{prediction\+\_\+tr}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{prediction\+\_\+tr}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+prediction\+\_\+tr = np.\+array(N\+N.\+predict(X\+\_\+tr\+\_\+n))}\label{namespacetest__python__wrapper_ac13fec0366a23feb02327f898755f543}
+\hypertarget{namespacetest__python__wrapper_a02c6c99c3b792f419918a024f32e6186}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!prediction\+\_\+val@{prediction\+\_\+val}}
+\index{prediction\+\_\+val@{prediction\+\_\+val}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{prediction\+\_\+val}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+prediction\+\_\+val = np.\+array(N\+N.\+predict(X\+\_\+cv\+\_\+n))}\label{namespacetest__python__wrapper_a02c6c99c3b792f419918a024f32e6186}
+\hypertarget{namespacetest__python__wrapper_a6b08d7d6b53d7c57e8a63155abb4b511}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!scaler@{scaler}}
+\index{scaler@{scaler}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{scaler}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+scaler = preprocessing.\+Standard\+Scaler()}\label{namespacetest__python__wrapper_a6b08d7d6b53d7c57e8a63155abb4b511}
+\hypertarget{namespacetest__python__wrapper_a6798c3c4cb1b40d7adaadffe659baf9b}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!test@{test}}
+\index{test@{test}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+test = \mbox{[}$\,$\mbox{]}}\label{namespacetest__python__wrapper_a6798c3c4cb1b40d7adaadffe659baf9b}
+\hypertarget{namespacetest__python__wrapper_aad910dc42f09fd045947a044950c9472}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!training@{training}}
+\index{training@{training}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{training}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+training = \mbox{[}$\,$\mbox{]}}\label{namespacetest__python__wrapper_aad910dc42f09fd045947a044950c9472}
+\hypertarget{namespacetest__python__wrapper_a077c5501e386c551a0c0f77f9714773d}{}\index{test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}!training\+\_\+n@{training\+\_\+n}}
+\index{training\+\_\+n@{training\+\_\+n}!test\+\_\+python\+\_\+wrapper@{test\+\_\+python\+\_\+wrapper}}
+\subsubsection[{training\+\_\+n}]{\setlength{\rightskip}{0pt plus 5cm}tuple test\+\_\+python\+\_\+wrapper.\+training\+\_\+n = scaler.\+transform({\bf training}\mbox{[}\+:,\mbox{[}0,1\mbox{]}\mbox{]})}\label{namespacetest__python__wrapper_a077c5501e386c551a0c0f77f9714773d}

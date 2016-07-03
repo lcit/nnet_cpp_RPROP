@@ -1,0 +1,56 @@
+\hypertarget{nnet__interface_8h}{}\section{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/wrapper/nnet\+\_\+interface.h File Reference}
+\label{nnet__interface_8h}\index{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/wrapper/nnet\+\_\+interface.\+h@{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/wrapper/nnet\+\_\+interface.\+h}}
+{\ttfamily \#include \char`\"{}../src/nnet.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$Eigen/\+Dense$>$}\\*
+Include dependency graph for nnet\+\_\+interface.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classneural__network_1_1nnet__int}{neural\+\_\+network\+::nnet\+\_\+int}
+\end{DoxyCompactItemize}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespaceneural__network}{neural\+\_\+network}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::vector$<$ int $>$ \hyperlink{nnet__interface_8h_a700afecc4fd2c8e786e3c57653532623}{Vector\+I}
+\item 
+typedef std\+::vector$<$ \hyperlink{nnet__interface_8h_a700afecc4fd2c8e786e3c57653532623}{Vector\+I} $>$ \hyperlink{nnet__interface_8h_a079e05608e6ef1021476f4d2d5084029}{Matrix\+I}
+\item 
+typedef std\+::vector$<$ double $>$ \hyperlink{nnet__interface_8h_a2c4fe61659262d65b76f8eb588824912}{Vector\+D}
+\item 
+typedef std\+::vector$<$ \hyperlink{nnet__interface_8h_a2c4fe61659262d65b76f8eb588824912}{Vector\+D} $>$ \hyperlink{nnet__interface_8h_a97d821bf195874d0aa871fa46e2c1168}{Matrix\+D}
+\item 
+typedef std\+::vector$<$ Matrix\+Xd $>$ \hyperlink{nnet__interface_8h_a4826060b437e399cfd1fca5281109704}{Vector\+Matrix\+Xd}
+\item 
+typedef std\+::vector$<$ \hyperlink{nnet__interface_8h_a97d821bf195874d0aa871fa46e2c1168}{Matrix\+D} $>$ \hyperlink{nnet__interface_8h_afe2cedbb44cc7edea19f72621f8e8e0e}{Vector\+Matrix\+D}
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\hypertarget{nnet__interface_8h_a97d821bf195874d0aa871fa46e2c1168}{}\index{nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}!Matrix\+D@{Matrix\+D}}
+\index{Matrix\+D@{Matrix\+D}!nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}}
+\subsubsection[{Matrix\+D}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Vector\+D}$>$ {\bf Matrix\+D}}\label{nnet__interface_8h_a97d821bf195874d0aa871fa46e2c1168}
+\hypertarget{nnet__interface_8h_a079e05608e6ef1021476f4d2d5084029}{}\index{nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}!Matrix\+I@{Matrix\+I}}
+\index{Matrix\+I@{Matrix\+I}!nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}}
+\subsubsection[{Matrix\+I}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Vector\+I}$>$ {\bf Matrix\+I}}\label{nnet__interface_8h_a079e05608e6ef1021476f4d2d5084029}
+\hypertarget{nnet__interface_8h_a2c4fe61659262d65b76f8eb588824912}{}\index{nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}!Vector\+D@{Vector\+D}}
+\index{Vector\+D@{Vector\+D}!nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}}
+\subsubsection[{Vector\+D}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$double$>$ {\bf Vector\+D}}\label{nnet__interface_8h_a2c4fe61659262d65b76f8eb588824912}
+\hypertarget{nnet__interface_8h_a700afecc4fd2c8e786e3c57653532623}{}\index{nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}!Vector\+I@{Vector\+I}}
+\index{Vector\+I@{Vector\+I}!nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}}
+\subsubsection[{Vector\+I}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$int$>$ {\bf Vector\+I}}\label{nnet__interface_8h_a700afecc4fd2c8e786e3c57653532623}
+\hypertarget{nnet__interface_8h_afe2cedbb44cc7edea19f72621f8e8e0e}{}\index{nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}!Vector\+Matrix\+D@{Vector\+Matrix\+D}}
+\index{Vector\+Matrix\+D@{Vector\+Matrix\+D}!nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}}
+\subsubsection[{Vector\+Matrix\+D}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<${\bf Matrix\+D}$>$ {\bf Vector\+Matrix\+D}}\label{nnet__interface_8h_afe2cedbb44cc7edea19f72621f8e8e0e}
+\hypertarget{nnet__interface_8h_a4826060b437e399cfd1fca5281109704}{}\index{nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}!Vector\+Matrix\+Xd@{Vector\+Matrix\+Xd}}
+\index{Vector\+Matrix\+Xd@{Vector\+Matrix\+Xd}!nnet\+\_\+interface.\+h@{nnet\+\_\+interface.\+h}}
+\subsubsection[{Vector\+Matrix\+Xd}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\+::vector$<$Matrix\+Xd$>$ {\bf Vector\+Matrix\+Xd}}\label{nnet__interface_8h_a4826060b437e399cfd1fca5281109704}

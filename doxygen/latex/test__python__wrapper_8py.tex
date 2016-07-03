@@ -1,0 +1,34 @@
+\hypertarget{test__python__wrapper_8py}{}\section{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/wrapper/test\+\_\+python\+\_\+wrapper.py File Reference}
+\label{test__python__wrapper_8py}\index{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/wrapper/test\+\_\+python\+\_\+wrapper.\+py@{/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/wrapper/test\+\_\+python\+\_\+wrapper.\+py}}
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacetest__python__wrapper}{test\+\_\+python\+\_\+wrapper}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_a59fd1bc3247bb0acb40d8cbf871143b9}{test\+\_\+python\+\_\+wrapper.\+current\+\_\+directory} = os.\+getcwd()
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_ac5d9b5723c691a9af92807d96792235a}{test\+\_\+python\+\_\+wrapper.\+csv\+\_\+training} = csv.\+reader(open(current\+\_\+directory + \textquotesingle{}/training.\+csv\textquotesingle{}, \textquotesingle{}rb\textquotesingle{}))
+\item 
+list \hyperlink{namespacetest__python__wrapper_aad910dc42f09fd045947a044950c9472}{test\+\_\+python\+\_\+wrapper.\+training} = \mbox{[}$\,$\mbox{]}
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_ae20ea0207ae3cf3032591f41c625031b}{test\+\_\+python\+\_\+wrapper.\+csv\+\_\+test} = csv.\+reader(open(current\+\_\+directory + \textquotesingle{}/test.\+csv\textquotesingle{}, \textquotesingle{}rb\textquotesingle{}))
+\item 
+list \hyperlink{namespacetest__python__wrapper_a6798c3c4cb1b40d7adaadffe659baf9b}{test\+\_\+python\+\_\+wrapper.\+test} = \mbox{[}$\,$\mbox{]}
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_a6b08d7d6b53d7c57e8a63155abb4b511}{test\+\_\+python\+\_\+wrapper.\+scaler} = preprocessing.\+Standard\+Scaler()
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_a077c5501e386c551a0c0f77f9714773d}{test\+\_\+python\+\_\+wrapper.\+training\+\_\+n} = scaler.\+transform(training\mbox{[}\+:,\mbox{[}0,1\mbox{]}\mbox{]})
+\item 
+list \hyperlink{namespacetest__python__wrapper_ac2c345805c1880bb41413973e3f408d6}{test\+\_\+python\+\_\+wrapper.\+layers} = \mbox{[}2,100,1\mbox{]}
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_acb732ba56f064d73826626b1ebc7db4c}{test\+\_\+python\+\_\+wrapper.\+N\+N} = nnet\+\_\+ext.\+nnet(layers)
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_ac13fec0366a23feb02327f898755f543}{test\+\_\+python\+\_\+wrapper.\+prediction\+\_\+tr} = np.\+array(N\+N.\+predict(X\+\_\+tr\+\_\+n))
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_a02c6c99c3b792f419918a024f32e6186}{test\+\_\+python\+\_\+wrapper.\+prediction\+\_\+val} = np.\+array(N\+N.\+predict(X\+\_\+cv\+\_\+n))
+\item 
+tuple \hyperlink{namespacetest__python__wrapper_a528e8d70107086ac3d5cae063362b480}{test\+\_\+python\+\_\+wrapper.\+prediction\+\_\+te} = np.\+array(N\+N.\+predict(X\+\_\+te))
+\end{DoxyCompactItemize}

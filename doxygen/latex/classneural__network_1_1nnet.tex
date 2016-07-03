@@ -1,0 +1,223 @@
+\hypertarget{classneural__network_1_1nnet}{}\section{neural\+\_\+network\+:\+:nnet Class Reference}
+\label{classneural__network_1_1nnet}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+
+
+{\ttfamily \#include $<$nnet.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classneural__network_1_1nnet_a4e8f24320f7c6c574899c85a92cb382f}{nnet} (Vector\+Xi size\+\_\+layers)
+\item 
+virtual \hyperlink{classneural__network_1_1nnet_acbb2074dbf2cfc8eda5536f6cbd92875}{$\sim$nnet} ()
+\item 
+void \hyperlink{classneural__network_1_1nnet_ad994357ff229ee9d3ff518b882565200}{fit} (const Matrix\+Xd \&X, const Matrix\+Xd \&y)
+\item 
+void \hyperlink{classneural__network_1_1nnet_a2b4f6283bc64d8ee1786c01da8fbc700}{fit} (const Matrix\+Xd \&X, const Matrix\+Xd \&y, const Matrix\+Xd \&X\+\_\+val, const Matrix\+Xd \&y\+\_\+val)
+\item 
+Matrix\+Xd \hyperlink{classneural__network_1_1nnet_a0e37c0cad47a0f7117b205100e0f42cb}{predict} (const Matrix\+Xd \&X)
+\item 
+void \hyperlink{classneural__network_1_1nnet_a944d1f4a66e93ff0845937674ae08b5d}{set\+\_\+lambda} (double Lambda)
+\item 
+void \hyperlink{classneural__network_1_1nnet_afd3120ed7fd3b4d6c3f80a6cedd55359}{set\+\_\+epochs} (unsigned int epochs)
+\item 
+void \hyperlink{classneural__network_1_1nnet_aa258225543f20ccf89424fa4e16f60b6}{set\+\_\+loss} (string loss)
+\item 
+void \hyperlink{classneural__network_1_1nnet_a6cd9badbd0718f2fde70c095fa117b83}{set\+\_\+verbose} (bool verbose)
+\item 
+void \hyperlink{classneural__network_1_1nnet_a120dd243ed0335bd9600f2654c579f8e}{set\+\_\+random\+\_\+state} (int random\+\_\+state)
+\item 
+void \hyperlink{classneural__network_1_1nnet_aba1c920e1e1580581999d9fcfaa89a3b}{set\+\_\+\+W} (\hyperlink{nnet_8hpp_a4826060b437e399cfd1fca5281109704}{Vector\+Matrix\+Xd} W)
+\item 
+void \hyperlink{classneural__network_1_1nnet_a26816d36c4ae862033cf5357f028ddac}{set\+\_\+mode\+\_\+test} (bool test)
+\item 
+void \hyperlink{classneural__network_1_1nnet_a1ea283c494151d2768f6b795c3a35500}{set\+\_\+eval} (string eval)
+\item 
+\hyperlink{nnet_8hpp_a4826060b437e399cfd1fca5281109704}{Vector\+Matrix\+Xd} \hyperlink{classneural__network_1_1nnet_a2fd48c6ff0a21b2e988991dbba408250}{get\+\_\+\+W} ()
+\item 
+\hyperlink{nnet_8hpp_a4826060b437e399cfd1fca5281109704}{Vector\+Matrix\+Xd} \hyperlink{classneural__network_1_1nnet_a259bddf59b4255fb8e58c85befd3edc2}{get\+\_\+\+A} ()
+\item 
+\hyperlink{nnet_8hpp_a4826060b437e399cfd1fca5281109704}{Vector\+Matrix\+Xd} \hyperlink{classneural__network_1_1nnet_a4f691667e5a97f781ef49faadbf2b65e}{get\+\_\+\+Z} ()
+\item 
+\hyperlink{nnet_8hpp_a4826060b437e399cfd1fca5281109704}{Vector\+Matrix\+Xd} \hyperlink{classneural__network_1_1nnet_a03b12ea1352b40278f3399a6a90e2b26}{get\+\_\+delta} ()
+\item 
+\hyperlink{nnet_8hpp_a4826060b437e399cfd1fca5281109704}{Vector\+Matrix\+Xd} \hyperlink{classneural__network_1_1nnet_a1e36b7aa84a497ec9754d393be2f5ae5}{get\+\_\+d\+Ed\+W} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classneural__network_1_1nnet_a4e8f24320f7c6c574899c85a92cb382f}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!nnet@{nnet}}
+\index{nnet@{nnet}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{nnet}]{\setlength{\rightskip}{0pt plus 5cm}nnet\+::nnet (
+\begin{DoxyParamCaption}
+\item[{Vector\+Xi}]{size\+\_\+layers}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a4e8f24320f7c6c574899c85a92cb382f}
+Constructor
+
+
+\begin{DoxyParams}{Parameters}
+{\em size\+\_\+layers} & number of neurons per layer (i.\+e.\+:\mbox{[}2,3,1\mbox{]})\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return 
+\end{DoxyReturn}
+\hypertarget{classneural__network_1_1nnet_acbb2074dbf2cfc8eda5536f6cbd92875}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!````~nnet@{$\sim$nnet}}
+\index{````~nnet@{$\sim$nnet}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{$\sim$nnet}]{\setlength{\rightskip}{0pt plus 5cm}nnet\+::$\sim$nnet (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{classneural__network_1_1nnet_acbb2074dbf2cfc8eda5536f6cbd92875}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classneural__network_1_1nnet_ad994357ff229ee9d3ff518b882565200}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!fit@{fit}}
+\index{fit@{fit}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{fit}]{\setlength{\rightskip}{0pt plus 5cm}void nnet\+::fit (
+\begin{DoxyParamCaption}
+\item[{const Matrix\+Xd \&}]{X, }
+\item[{const Matrix\+Xd \&}]{y}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_ad994357ff229ee9d3ff518b882565200}
+Fitting the N\+N
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & full training set \\
+\hline
+{\em y} & full training labels \\
+\hline
+{\em X\+\_\+val} & full validation set \\
+\hline
+{\em y\+\_\+val} & full validation labels\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+no return 
+\end{DoxyReturn}
+\hypertarget{classneural__network_1_1nnet_a2b4f6283bc64d8ee1786c01da8fbc700}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!fit@{fit}}
+\index{fit@{fit}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{fit}]{\setlength{\rightskip}{0pt plus 5cm}void nnet\+::fit (
+\begin{DoxyParamCaption}
+\item[{const Matrix\+Xd \&}]{X, }
+\item[{const Matrix\+Xd \&}]{y, }
+\item[{const Matrix\+Xd \&}]{X\+\_\+val, }
+\item[{const Matrix\+Xd \&}]{y\+\_\+val}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a2b4f6283bc64d8ee1786c01da8fbc700}
+\hypertarget{classneural__network_1_1nnet_a259bddf59b4255fb8e58c85befd3edc2}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!get\+\_\+\+A@{get\+\_\+\+A}}
+\index{get\+\_\+\+A@{get\+\_\+\+A}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{get\+\_\+\+A}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\+Matrix\+Xd} nnet\+::get\+\_\+\+A (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a259bddf59b4255fb8e58c85befd3edc2}
+\hypertarget{classneural__network_1_1nnet_a1e36b7aa84a497ec9754d393be2f5ae5}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!get\+\_\+d\+Ed\+W@{get\+\_\+d\+Ed\+W}}
+\index{get\+\_\+d\+Ed\+W@{get\+\_\+d\+Ed\+W}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{get\+\_\+d\+Ed\+W}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\+Matrix\+Xd} nnet\+::get\+\_\+d\+Ed\+W (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a1e36b7aa84a497ec9754d393be2f5ae5}
+\hypertarget{classneural__network_1_1nnet_a03b12ea1352b40278f3399a6a90e2b26}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!get\+\_\+delta@{get\+\_\+delta}}
+\index{get\+\_\+delta@{get\+\_\+delta}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{get\+\_\+delta}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\+Matrix\+Xd} nnet\+::get\+\_\+delta (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a03b12ea1352b40278f3399a6a90e2b26}
+\hypertarget{classneural__network_1_1nnet_a2fd48c6ff0a21b2e988991dbba408250}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!get\+\_\+\+W@{get\+\_\+\+W}}
+\index{get\+\_\+\+W@{get\+\_\+\+W}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{get\+\_\+\+W}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\+Matrix\+Xd} nnet\+::get\+\_\+\+W (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a2fd48c6ff0a21b2e988991dbba408250}
+\hypertarget{classneural__network_1_1nnet_a4f691667e5a97f781ef49faadbf2b65e}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!get\+\_\+\+Z@{get\+\_\+\+Z}}
+\index{get\+\_\+\+Z@{get\+\_\+\+Z}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{get\+\_\+\+Z}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Vector\+Matrix\+Xd} nnet\+::get\+\_\+\+Z (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a4f691667e5a97f781ef49faadbf2b65e}
+\hypertarget{classneural__network_1_1nnet_a0e37c0cad47a0f7117b205100e0f42cb}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!predict@{predict}}
+\index{predict@{predict}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{predict}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\+Xd nnet\+::predict (
+\begin{DoxyParamCaption}
+\item[{const Matrix\+Xd \&}]{X}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a0e37c0cad47a0f7117b205100e0f42cb}
+Predict labels of X, similar with forward() but no class members are modified
+
+
+\begin{DoxyParams}{Parameters}
+{\em X} & full training set\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+matrix of predictions 
+\end{DoxyReturn}
+\hypertarget{classneural__network_1_1nnet_afd3120ed7fd3b4d6c3f80a6cedd55359}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!set\+\_\+epochs@{set\+\_\+epochs}}
+\index{set\+\_\+epochs@{set\+\_\+epochs}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{set\+\_\+epochs}]{\setlength{\rightskip}{0pt plus 5cm}void nnet\+::set\+\_\+epochs (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{epochs}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_afd3120ed7fd3b4d6c3f80a6cedd55359}
+\hypertarget{classneural__network_1_1nnet_a1ea283c494151d2768f6b795c3a35500}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!set\+\_\+eval@{set\+\_\+eval}}
+\index{set\+\_\+eval@{set\+\_\+eval}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{set\+\_\+eval}]{\setlength{\rightskip}{0pt plus 5cm}void nnet\+::set\+\_\+eval (
+\begin{DoxyParamCaption}
+\item[{string}]{eval}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a1ea283c494151d2768f6b795c3a35500}
+\hypertarget{classneural__network_1_1nnet_a944d1f4a66e93ff0845937674ae08b5d}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!set\+\_\+lambda@{set\+\_\+lambda}}
+\index{set\+\_\+lambda@{set\+\_\+lambda}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{set\+\_\+lambda}]{\setlength{\rightskip}{0pt plus 5cm}void nnet\+::set\+\_\+lambda (
+\begin{DoxyParamCaption}
+\item[{double}]{Lambda}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a944d1f4a66e93ff0845937674ae08b5d}
+\hypertarget{classneural__network_1_1nnet_aa258225543f20ccf89424fa4e16f60b6}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!set\+\_\+loss@{set\+\_\+loss}}
+\index{set\+\_\+loss@{set\+\_\+loss}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{set\+\_\+loss}]{\setlength{\rightskip}{0pt plus 5cm}void nnet\+::set\+\_\+loss (
+\begin{DoxyParamCaption}
+\item[{string}]{loss}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_aa258225543f20ccf89424fa4e16f60b6}
+\hypertarget{classneural__network_1_1nnet_a26816d36c4ae862033cf5357f028ddac}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!set\+\_\+mode\+\_\+test@{set\+\_\+mode\+\_\+test}}
+\index{set\+\_\+mode\+\_\+test@{set\+\_\+mode\+\_\+test}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{set\+\_\+mode\+\_\+test}]{\setlength{\rightskip}{0pt plus 5cm}void nnet\+::set\+\_\+mode\+\_\+test (
+\begin{DoxyParamCaption}
+\item[{bool}]{test}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a26816d36c4ae862033cf5357f028ddac}
+\hypertarget{classneural__network_1_1nnet_a120dd243ed0335bd9600f2654c579f8e}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!set\+\_\+random\+\_\+state@{set\+\_\+random\+\_\+state}}
+\index{set\+\_\+random\+\_\+state@{set\+\_\+random\+\_\+state}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{set\+\_\+random\+\_\+state}]{\setlength{\rightskip}{0pt plus 5cm}void nnet\+::set\+\_\+random\+\_\+state (
+\begin{DoxyParamCaption}
+\item[{int}]{random\+\_\+state}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a120dd243ed0335bd9600f2654c579f8e}
+\hypertarget{classneural__network_1_1nnet_a6cd9badbd0718f2fde70c095fa117b83}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!set\+\_\+verbose@{set\+\_\+verbose}}
+\index{set\+\_\+verbose@{set\+\_\+verbose}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{set\+\_\+verbose}]{\setlength{\rightskip}{0pt plus 5cm}void nnet\+::set\+\_\+verbose (
+\begin{DoxyParamCaption}
+\item[{bool}]{verbose}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_a6cd9badbd0718f2fde70c095fa117b83}
+\hypertarget{classneural__network_1_1nnet_aba1c920e1e1580581999d9fcfaa89a3b}{}\index{neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}!set\+\_\+\+W@{set\+\_\+\+W}}
+\index{set\+\_\+\+W@{set\+\_\+\+W}!neural\+\_\+network\+::nnet@{neural\+\_\+network\+::nnet}}
+\subsubsection[{set\+\_\+\+W}]{\setlength{\rightskip}{0pt plus 5cm}void nnet\+::set\+\_\+\+W (
+\begin{DoxyParamCaption}
+\item[{{\bf Vector\+Matrix\+Xd}}]{W}
+\end{DoxyParamCaption}
+)}\label{classneural__network_1_1nnet_aba1c920e1e1580581999d9fcfaa89a3b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/include/\hyperlink{nnet_8hpp}{nnet.\+hpp}\item 
+/home/leo/\+Desktop/nnet\+\_\+cpp\+\_\+\+R\+P\+R\+O\+P/src/\hyperlink{nnet_8cpp}{nnet.\+cpp}\end{DoxyCompactItemize}
