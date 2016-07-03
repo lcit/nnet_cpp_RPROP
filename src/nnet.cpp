@@ -1,3 +1,14 @@
+/*	=========================================================================
+	Author: Leonardo Citraro
+	Company: 
+	Filename: nnet.cpp
+	Last modifed: 20.10.2015 by Leonardo Citraro
+	Description: Neural network class implementation
+
+	=========================================================================
+
+	=========================================================================
+*/
 #include <cmath> 
 #include <iostream>
 #include <stdexcept>
@@ -15,15 +26,8 @@
 
 using namespace neural_network;
 
-nnet::nnet(VectorXi size_layers) :  training_set_size(0),
-                                    eval("accuracy"),
-                                    mode_test(0),
-                                    random_state(-1), 
-                                    verbose(1), 
-                                    loss("logloss"),  
-                                    epochs(1), 
-                                    Lambda(0)
-                                    {
+nnet::nnet(VectorXi size_layers) :  training_set_size(0), eval("accuracy"), mode_test(0), random_state(-1), 
+                                    verbose(1), loss("logloss"), epochs(1), Lambda(0){
     this->size_layers = size_layers;        
     this->nn_size = size_layers.size();   
     init_internal_matrices();

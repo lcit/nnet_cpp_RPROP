@@ -1,3 +1,14 @@
+/*	=========================================================================
+	Author: Leonardo Citraro
+	Company: 
+	Filename: Eigen_plus.cpp
+	Last modifed: 20.10.2015 by Leonardo Citraro
+	Description: Some matrix operations based on Eigen
+
+	=========================================================================
+
+	=========================================================================
+*/
 #include <ctime>
 #include "Eigen_plus.h"
 

@@ -1,4 +1,14 @@
-// code partially copied from: http://www.mathworks.com/matlabcentral/fileexchange/41258-faster-roc-auc
+/*	=========================================================================
+	Author: Leonardo Citraro
+	Company: 
+	Filename: auc.cpp
+	Last modifed: 20.10.2015 by Leonardo Citraro
+	Description: AUC helper functions
+
+	=========================================================================
+	code partially copied from: http://www.mathworks.com/matlabcentral/fileexchange/41258-faster-roc-auc
+	=========================================================================
+*/
 
 #include "auc.h"
 
